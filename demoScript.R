@@ -17,7 +17,7 @@ require(rGithubClient) # another Sage Bionetworks R package
 # So let's pulldown the Github repository ('repo', for short) that underlies the entire Science
 # Translational Medicine paper, Margolin et. al. 'Systematic Analysis of Challenge-Driven Improvements 
 # in Molecular Prognostic Models for Breast Cancer', Sci Trans Med, doi 10.1126/scitranslmed.3006112
-stmRepo <- getRepo('sage-bionetworks/STM-metaAnalysis-clearScience')
+stmRepo <- getRepo('sage-bionetworks/STM-metaAnalysis-clearScience', ref = 'tag', refName = 'v1.0')
 show(stmRepo)
 
 ## LET'S LOOK AT FIGURE 5 
